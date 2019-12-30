@@ -51,11 +51,11 @@ end
    File.read('./index.html')
  end
 #
-# def parsed_html
-#   Nokogiri::HTML(html_file_contents) do |config|
-#     config.strict.dtdload.dtdvalid.noblanks
-#   end
-# end
+def parsed_html
+   Nokogiri::HTML(html_file_contents) do |config|
+     config.strict.dtdload.dtdvalid.noblanks
+   end
+ end
 
 # To parse and test a CSS file, add 'css_parser' to Gemfile and uncomment this method
 # def parsed_css
