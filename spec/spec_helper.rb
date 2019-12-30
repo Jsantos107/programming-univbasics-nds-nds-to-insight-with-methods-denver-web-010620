@@ -58,8 +58,8 @@ def parsed_html
  end
 
 # To parse and test a CSS file, add 'css_parser' to Gemfile and uncomment this method
-# def parsed_css
-#   parser = CssParser::Parser.new
-#   parser.load_uri!('./style.css')
-#   parser
-# end
+ def parsed_css
+   parser = CssParser::Parser.new
+   parser.load_uri!('./style.css')
+   parser
+ end
